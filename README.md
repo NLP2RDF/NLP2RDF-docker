@@ -1,5 +1,6 @@
 ## What is NLP2RDF?
 
+[NLP Interchange Format (NIF)](http://github.com/NLP2RDF/software/wiki/Introduction-to-NIF) is an ontology that describes strings 
 
 ## How to run
 
