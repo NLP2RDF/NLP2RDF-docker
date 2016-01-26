@@ -7,7 +7,7 @@
 
 and then
 
-``docker run -it -p 9998:80 -p 9999:9999 -h nlp2rdf.lod2.eu nlp2rdf NIF.sh``
+``docker run -it -p 80:80 -p 9999:9999 -h nlp2rdf.lod2.eu nlp2rdf NIF.sh``
 
 ## Supported Docker versions
 This image is officially supported on Docker version 1.9.1.
