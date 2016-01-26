@@ -1,0 +1,22 @@
+Options -MultiViews
+
+AddType application/rdf+xml .rdf .owl
+AddType text/plain .ttl
+RewriteEngine On
+AddCharset utf-8 .txt .log .ttl
+
+
+
+##################
+# Rewrite rule to serve  text/plain content if requested
+##################
+RewriteCond %{HTTP_ACCEPT} text/plain
+RewriteRule ^resource/(.*)$ /txt/$1.txt [R=303,L]
+
+RewriteCond %{HTTP_ACCEPT} application/rdf+xml
+RewriteRule ^resource/(.*)$ /rdf/$1.rdf [R=303,L]
+
+#################
+# Default
+#################
+RewriteRule ^resource/(.*)$ /rdf/$1.ttl [R=303,L]
