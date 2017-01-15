@@ -4,11 +4,7 @@
 
 ## How to run
 
-``docker build -f Dockerfile  -t nlp2rdf .``
-
-and then
-
-``docker run -it -p 80:80 -p 9999:9999 -h nlp2rdf.lod2.eu nlp2rdf NIF.sh``
+``docker run -it -p 80:80 -p 9999:9999 -h nlp2rdf.lod2.eu docker pull nlp2rdf/nlp2rdf-docker NIF.sh``
 
 ## Supported Docker versions
 This image is officially supported on Docker version 1.9.1.
