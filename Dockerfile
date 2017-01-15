@@ -1,5 +1,6 @@
 FROM java:8
 
+MAINTAINER  NLP2RDF <nlp2rdf@lists.informatik.uni-leipzig.de>
 
 RUN apt-get update && apt-get install -y \
     maven  \
@@ -18,10 +19,6 @@ RUN mkdir -p /opt/NLP2RDF && \
     a2enmod rewrite  && \
     service apache2 restart && \
     cp -r /opt/NLP2RDF/software/php/* /var/www/html
-
-
-
-
 
 EXPOSE 80 9999
 
